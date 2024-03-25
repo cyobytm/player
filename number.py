@@ -1,10 +1,12 @@
 
 # importing the random module
 import random
-numere=[random.randint(0,100)]
-userx=int(input("ghiciti numarul, introduce numar \n  "))
-print("numarul random este ", numere)
-if userx == numere:
-    print("Ai ghicit")
+numere=[random.randint(1,49) for i in range(6)]
+print(numere)
+numar_jucat=int(input("ghiciti numarul, introduce numar \n  "))
+for nr in numere:   
+    if numar_jucat == nr:
+        print("Numarul extras se afla in numerele jucate")
+        break
 else:
-  print("Nu ai ghicit")
+       print("Numarul extras NU se afla in numerele jucate") 
