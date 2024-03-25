@@ -10,3 +10,4 @@ for nr in numere:
         break
 else:
        print("Numarul extras NU se afla in numerele jucate") 
+print(any ([numar_jucat == nr for nr in numere]))
